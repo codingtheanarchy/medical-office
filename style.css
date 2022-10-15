@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  margin: 10px 3px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  height: 90px;
+  padding: 0 10px;
+}
+
+.app-name {
+  padding: 15px;
+}
+
+main {
+  display: flex;
+}
+
+main aside {
+  width: 30%;
+}
+
+.locations {
+  display: none;
+}
+
+main section {
+  width: 70%;
+}
+
+figcaption::before {
+  content: ' ';
+}

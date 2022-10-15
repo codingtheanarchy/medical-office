@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Medical Records</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="brand-logo">
+          <img src="./images/brand-logo.png" alt="Brand Logo" />
+        </div>
+        <div class="app-name">
+          <h1>Medical Records</h1>
+        </div>
+      </header>
+      <hr />
+      <main>
+        <aside>
+          <label for="office-selection">Medical Offices</label><br />
+          <select name="office" id="office-selection">
+            <option value="">Choose Office</option>
+            <option value="office-1">North Dock, Virgina</option>
+            <option value="office-2">South Elnastad, Alaska</option>
+          </select>
+          <div id="offices-container">
+            <div id="office-info-1" class="locations">
+              <section>
+                <h2>Address</h2>
+                <span>507 Considine Drive</span><br />
+                <span>North Dock, Virgina 49486</span>
+              </section>
+              <section>
+                <h2>Telephone</h2>
+                <span>296.275.8494</span>
+              </section>
+              <section>
+                <h2>Email</h2>
+                <span>info@mdrecordsvirgina.com</span>
+              </section>
+            </div>
+            <div id="office-info-2" class="locations">
+              <section>
+                <h2>Address</h2>
+                <span>47117 Mertz Keys</span><br />
+                <span>South Elnastad, Alaska 16186</span>
+              </section>
+              <section>
+                <h2>Telephone</h2>
+                <span>769.579.3322</span>
+              </section>
+              <section>
+                <h2>Email</h2>
+                <span>info@mdrecordsAlaska.com</span>
+              </section>
+            </div>
+          </div>
+        </aside>
+        <section>
+          <h2>Patient Medical Records</h2>
+          <div id="records-box">
+            <figure>
+              <img src="./images/personal-info.png" alt="personal info" />
+              <h3>Personal</h3>
+              <figcaption>name, age, primary contact</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/allergies-info.png" alt="Allergies info" />
+              <h3>Allergies</h3>
+              <figcaption>Required for prescribed drugs</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/shots-info.png" alt="Shots info" />
+              <h3>Shots</h3>
+              <figcaption>Required for prescribed drugs</figcaption>
+            </figure>
+            <figure>
+              <img src="./images/medications-info.png" alt="Medical info" />
+              <h3>Medications</h3>
+              <figcaption>Required for prescribed drugs</figcaption>
+            </figure>
+          </div>
+        </section>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
