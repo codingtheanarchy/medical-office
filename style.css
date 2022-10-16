@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "nerd-font";
+  src: url("./fonts/Symbols-2048-em Nerd Font Complete.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -37,6 +42,48 @@ main section {
   width: 70%;
 }
 
-figcaption::before {
-  content: ' ';
+main section h2 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#records-box {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#records-box figure {
+  flex-basis: 250px;
+  height: 200px;
+
+  position: relative;
+  border: 1px solid black;
+  padding: 25px;
+
+  font-family: "nerd-font";
+}
+
+#records-box figure::after {
+  content: "\f071";
+  color: red;
+  height: 30px;
+  width: 30px;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+#records-box figure img {
+  display: block;
+  width: 100%;
+  max-width: 64px;
+}
+
+/* selects the first three elements contained in figure */
+#records-box figure > :nth-child(n + 1):nth-child(-n + 3) {
+  margin: 5px auto;
+  text-align: center;
 }
