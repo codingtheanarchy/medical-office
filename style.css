@@ -1,12 +1,16 @@
 @font-face {
-  font-family: "nerd-fonts";
-  src: url("./fonts/Symbols-2048-em Nerd Font Complete.ttf");
+  font-family: 'nerd-fonts';
+  src: url('./fonts/Symbols-2048-em Nerd Font Complete.ttf');
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+h2 {
+  color: blue
 }
 
 i {
@@ -67,12 +71,20 @@ main section h2 {
   padding: 25px;
 }
 
-i.exclamation::after {
-  content: '\f071';
+#records-box figure i::after {
   position: absolute;
   top: 10px;
   right: 15px;
+}
+
+i.exclamation::after {
+  content: '\f071';
   color: red;
+}
+
+i.checkmark::after {
+  content: "\f058";
+  color: green;
 }
 
 #records-box figure img {
