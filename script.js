@@ -5,10 +5,6 @@ const [officeInfo1, officeInfo2] = officeLocations
 
 // Variables for #records-box
 const recordsBox = document.querySelector('#records-box')
-const personalIcon = document.querySelector('#personal-icon')
-const allergiesIcon = document.querySelector('#allergies-icon')
-const shotsIcon = document.querySelector('#shots-icon')
-const medicationsIcon = document.querySelector('#medications-icon')
 
 // Event listener for <aside>
 patientsOffice.addEventListener('click', function (event) {
@@ -32,20 +28,10 @@ patientsOffice.addEventListener('click', function (event) {
 
 // Event listener for #records-box
 recordsBox.addEventListener('click', function (event) {
-  const target = event.target
-  // Runs if a child element is clicked
-  if (target.tagName != 'FIGURE') {
-    const parent = target.parentElement
-    const iconElement = parent.children[0]
-    // Modify the icon class
-    iconElement.className = 'checkmark'
-  }
-  // Runs if figure element it clicked
-  else if (target.tagName === 'FIGURE') {
-    target.children[0].className = 'checkmark'
+  console.log(event.target)
+  const target = event.target;
+  if (target.tagName === 'FIGURE') {
+   const icon = document.querySelector(`#${target.id}-icon`) 
+   icon.className = "checkmark"
   }
 })
-
-// TODO: Refactor by attaching a pseudo ::before to all <figures>
-//       Apply #ids to <figures> Calling them: 
-//       personal, allergies, shots, and medications respectively 
