@@ -10,7 +10,7 @@
 }
 
 h2 {
-  color: blue
+  color: blue;
 }
 
 i {
@@ -71,6 +71,17 @@ main section h2 {
   padding: 25px;
 }
 
+#records-box figure::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  background: transparent
+}
+
 #records-box figure i::after {
   position: absolute;
   top: 10px;
@@ -83,7 +94,7 @@ i.exclamation::after {
 }
 
 i.checkmark::after {
-  content: "\f058";
+  content: '\f058';
   color: green;
 }
 
