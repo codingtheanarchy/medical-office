@@ -21,6 +21,10 @@ hr {
   margin: 10px 3px;
 }
 
+#container {
+  margin: 15px
+}
+
 header {
   display: flex;
   align-items: center;
@@ -39,7 +43,7 @@ main {
 }
 
 main aside {
-  width: 30%;
+  width: 35%;
 }
 
 .locations {
@@ -47,12 +51,17 @@ main aside {
 }
 
 main section {
-  width: 70%;
+  width: 65%;
 }
 
 main section h2 {
   margin: 20px 0;
   text-align: center;
+}
+main section span {
+  display: inline-block;
+  width: 100%;
+  text-align:center
 }
 
 #records-box {
