@@ -13,22 +13,21 @@ patientsOffice.addEventListener('click', function (event) {
   if (usersSelection === 'office-1') {
     // Hide previous info
     officeInfo2.style.display = 'none'
-    // Show Costa Mesa office information
+    // Show office information
     officeInfo1.style.display = 'block'
   } else if (usersSelection === 'office-2') {
     // Hide previous info
     officeInfo1.style.display = 'none'
-    // Show Costa Mesa office information
+    // Show office information
     officeInfo2.style.display = 'block'
   } else {
-    officeInfo1.style.display = 'none'
-    officeInfo2.style.display = 'none'
+    officeInfo1.style.display = "none" 
+    officeInfo2.style.display = "none" 
   }
 })
 
 // Event listener for #records-box
 recordsBox.addEventListener('click', function (event) {
-  console.log(event.target)
   const target = event.target;
   if (target.tagName === 'FIGURE') {
    const icon = document.querySelector(`#${target.id}-icon`) 
