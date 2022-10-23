@@ -40,18 +40,24 @@ header {
 
 main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main aside {
-  width: 35%;
+  flex-basis: 35%;
 }
+
+main aside select#office-selection {
+  text-transform: uppercase;
+}  
 
 .locations {
   display: none;
 }
 
-main section {
-  width: 65%;
+main section#records-container {
+  flex-basis: 65%;
 }
 
 main section h2 {
